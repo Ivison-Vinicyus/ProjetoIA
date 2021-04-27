@@ -8,7 +8,7 @@ public class Principal {
     private static double[] fit;
     private static double probabilidadeDCruzar = 0.7;
     private static double probabilidadeDMutacao = 0.01;
-    private static int individuos = 200;
+    private static int individuos = 300;
     private static int genes = 8;
     
     public static void main(String[] args) {
@@ -63,7 +63,7 @@ public class Principal {
         return resultado;
     }
     
-    public static double fit(int x) {return (x*x)-(4*x)+6;}
+    public static double fit(int x) {return (x*x)-(6*x)+10;}
     
     public static int paiMaior() {
         double maior = fit[0];
